@@ -1,10 +1,10 @@
 @font-face {
-    font-family: Balsamiq_sans;
-    src: url('BalsamiqSans-Regular.ttf') format('truetype');
+    font-family: 'Balsamiq_sans';
+    src: url('../Balsamiq_Sans/BalsamiqSans-Regular.ttf') format('truetype');
 }
 body {
-    font-family: Balsamiq_sans, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Balsamiq_sans', sans-serif;
+    background-color: rgb(256, 256, 256);
     margin: 0;
     padding: 20px;
 }
