@@ -22,14 +22,20 @@ header {
     padding: 15px 40px;             /* space inside header */
     border-bottom: 1px solid #ccc;  /* subtle line under header */
 }
-
-
-/* Logo placeholder */
+/* Logo container */
 .logo {
-    width: 120px;             /* fixed width */
-    height: 40px;             /* fixed height */
-    border: 2px solid black;  /* outline of logo */
-    position: relative;       /* allows pseudo-elements inside */
+    width: 120px;
+}
+
+/* Logo image */
+.logo img {
+    width: 100%;       /* fills container */
+    height: auto;      /* keeps proportions */
+    display: block;    /* removes small spacing issue */
+}
+/* Hover effect for logo */
+.logo a:hover {
+    opacity: 0.7;
 }
 
 /* NAVIGATION */
