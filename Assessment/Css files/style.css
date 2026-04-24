@@ -1,10 +1,158 @@
+/* Reset default browser styles for consistency across browsers */
+* {
+    margin: 0;              /* removes default spacing */
+    padding: 0;             /* removes default padding */
+    box-sizing: border-box; /* makes width/height include padding & border */
+}
 @font-face {
     font-family: 'Balsamiq_sans';
     src: url('../Balsamiq_Sans/BalsamiqSans-Regular.ttf') format('truetype');
 }
 body {
-    font-family: 'Balsamiq_sans', sans-serif;
-    background-color: rgb(256, 256, 256);
+    font-family: 'Balsamiq_sans', sans-serif; /* sets clean readable font */
+    background-color: rgb(256, 256, 256); /* sets background to white */
     margin: 0;
     padding: 20px;
+}
+/* Main header container */
+header {
+    display: flex;                  /* enables flexbox layout */
+    justify-content: space-between; /* pushes logo left, nav right */
+    align-items: center;            /* vertically centers items */
+    padding: 15px 40px;             /* space inside header */
+    border-bottom: 1px solid #ccc;  /* subtle line under header */
+}
+
+
+/* Logo placeholder */
+.logo {
+    width: 120px;             /* fixed width */
+    height: 40px;             /* fixed height */
+    border: 2px solid black;  /* outline of logo */
+    position: relative;       /* allows pseudo-elements inside */
+}
+
+/* NAVIGATION */
+/* Navbar */
+.Navbar ul {
+    display: flex;              /* makes items horizontal */
+    justify-content: flex-end;  /* aligns nav to the right */
+    list-style: none;           /* removes bullet points */
+    gap: 20px;                  /* space between links */
+}
+
+/* Navigation links */
+.Navbar a {
+    text-decoration: none;  /* removes underline */
+    color: #333;            /* dark grey text */
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.2s ease; /* smooth hover effect */
+}
+
+/* Hover effect for nav links */
+.Navbar a:hover {
+    color: #888; /* lighter grey on hover */
+}
+
+/* Hero */
+/* Main intro section */
+.hero {
+    text-align: center;   /* centers text */
+    padding: 60px 20px;   /* spacing around content */
+}
+
+/* Main heading */
+.hero h1 {
+    font-size: 36px;      /* large title */
+    margin-bottom: 10px;  /* spacing below */
+}
+
+/* Subtitle text */
+.hero p {
+    color: #555;          /* softer grey */
+    margin-bottom: 20px;  /* spacing below */
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    gap: 10px;               /* space between buttons */
+    flex-wrap: wrap;         /* allows wrapping on smaller screens */
+}
+
+/* Styled links acting as buttons */
+.buttons a {
+    display: inline-block;
+    padding: 10px 15px;           /* button size */
+    background-color: #d1d5db;    /* light grey */
+    border-radius: 6px;           /* rounded corners */
+    text-decoration: none;        /* remove underline */
+    color: black;
+    font-size: 14px;
+    transition: background 0.2s ease; /* smooth hover */
+}
+
+/* Hover effect for buttons */
+.buttons a:hover {
+    background-color: #bfc4c9; /* slightly darker */
+}
+/* Main carousel container */
+.carousel {
+    position: relative; /* allows positioning of buttons inside */
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto; /* center horizontally */
+    overflow: hidden; /* hide slides outside view */
+}
+
+/* Container that holds all slides */
+.carousel-track {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+/* Each slide (image) */
+.slide {
+    position: absolute; /* stack slides on top of each other */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fill container without distortion */
+
+    opacity: 0; /* hidden by default */
+    transition: opacity 0.5s ease; /* smooth fade effect */
+}
+
+/* Only the active slide is visible */
+.slide.active {
+    opacity: 1;
+}
+
+/* Navigation buttons (left & right arrows) */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* vertically center */
+
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Position buttons on each side */
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
 }
