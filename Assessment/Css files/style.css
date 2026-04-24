@@ -156,3 +156,87 @@ footer {
     border-top: 1px solid #ccc;
     font-size: 14px;
 }
+/*  RESPONSIVE DESIGN  */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+
+    /* Stack navbar items vertically */
+    .Navbar ul {
+        flex-direction: column;   /* vertical layout */
+        align-items: flex-end;    /* keep it right-aligned */
+        gap: 10px;
+    }
+
+    /* Reduce header padding */
+    header {
+        padding: 15px 20px;
+    }
+
+    /* Hero text smaller */
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    /* Buttons stack nicely */
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons a {
+        width: 80%; /* bigger tap area */
+        text-align: center;
+    }
+
+    /* Carousel smaller */
+    .carousel {
+        width: 95%;
+    }
+
+    .carousel-track {
+        height: 200px;
+    }
+
+    /* Footer stacks */
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+
+/* Phones */
+@media (max-width: 480px) {
+
+    /* Even smaller heading */
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    /* Reduce spacing */
+    .hero {
+        padding: 40px 10px;
+    }
+
+    /* Smaller buttons */
+    .buttons a {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    /* Smaller carousel */
+    .carousel-track {
+        height: 160px;
+    }
+
+    /* Nav font smaller */
+    .Navbar a {
+        font-size: 12px;
+    }
+}
