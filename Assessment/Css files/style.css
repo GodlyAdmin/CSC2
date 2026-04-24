@@ -16,7 +16,7 @@ body {
 }
 /* Main header container */
 header {
-    display: flex;                  /* enables flexbox layout */
+    display: flex;                 
     justify-content: space-between; /* pushes logo left, nav right */
     align-items: center;            /* vertically centers items */
     padding: 15px 40px;             /* space inside header */
