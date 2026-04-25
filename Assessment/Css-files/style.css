@@ -315,3 +315,24 @@ footer {
 .menu-item .text span {
     font-weight: bold;
 }
+/* Menu item image */
+/* Image container */
+.img-box {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;   /* hides overflow */
+    border-radius: 6px; /* optional: rounded corners */
+}
+
+/* Actual image */
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keeps image nicely cropped */
+    display: block;
+}
+/* Hover effect for menu item images */
+.img-box img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
