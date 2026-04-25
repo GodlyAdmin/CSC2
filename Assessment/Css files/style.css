@@ -290,3 +290,28 @@ footer {
 .menu-column h2 {
     margin-bottom: 15px;
 }
+/* MENU ITEMS */
+
+/* Each menu item row */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Text content */
+.menu-item .text h3 {
+    margin-bottom: 5px;
+}
+
+.menu-item .text p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.menu-item .text span {
+    font-weight: bold;
+}
