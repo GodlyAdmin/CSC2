@@ -246,3 +246,27 @@ footer {
         font-size: 12px;
     }
 }
+/* MENU PAGE */
+
+/* Main page spacing */
+.menu-page {
+    padding: 20px 40px;
+}
+
+/* Back link (top left) */
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    color: #888;
+}
+
+/* Main menu title */
+.menu-page h1 {
+    margin-bottom: 20px;
+}
