@@ -270,3 +270,23 @@ footer {
 .menu-page h1 {
     margin-bottom: 20px;
 }
+/* MENU LAYOUT */
+
+/* layout for all 3 columns */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+/* Each column */
+.menu-column {
+    flex: 1;
+    min-width: 250px; /* prevents columns getting too small */
+}
+
+/* Section titles (Appetizers, etc.) */
+.menu-column h2 {
+    margin-bottom: 15px;
+}
