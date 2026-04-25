@@ -330,9 +330,9 @@ footer {
     height: 100%;
     object-fit: cover; /* keeps image nicely cropped */
     display: block;
+    transition: 0.3s ease; /* smooth hover effect */
 }
 /* Hover effect for menu item images */
 .img-box img:hover {
     transform: scale(1.1);
-    transition: 0.3s;
 }
