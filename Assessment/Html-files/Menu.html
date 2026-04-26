@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../Css-files/style.css"> <!-- Link to the external CSS file for styling -->
+    <script src="../Java-Script/carousel.js" defer></script> <!-- Link to the external JavaScript file for Carousel functionality -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
@@ -24,7 +25,6 @@
                 <li><a href="../Html-files/Aboutus.html">About Us</a></li>
             </ul>
         </div>
-    </div>
     </header>
     <main class="menu-page">
         <!-- Back link -->
@@ -159,9 +159,20 @@
         <!-- Auto Image Carousel -->
         <section class="carousel-section">
             <h2>Image Gallery</h2>
-                <div class="carousel">
-                    
-                </div>
+            <div class="carousel">
+                <!-- LEFT ARROW -->
+                <button class="prev">&#10094;</button>
+                <!-- Slides -->
+                <img src="../Images/Steak-Frites-052.jpg" class="slide active" alt="Steak Frites">
+                <img src="../Images/Chicken-Tikka-Masala.jpeg" class="slide" alt="Chicken Tikka Masala">
+                <img src="../Images/roasted-kumara-salad.jpg" class="slide" alt="Roasted Kūmara Salad">
+                <img src="../Images/New-York-Cheesecake.jpeg" class="slide" alt="New York Cheesecake">
+                <img src="../Images/Syrniki.jpg" class="slide" alt="Syrniki (Cottage Cheese Pancakes)">
+                <img src="../Images/Plantain-chips.jpeg" class="slide" alt="Plantain chips">
+                <img src="../Images/coxinha-brazilian.jpg" class="slide" alt="Coxinhas">
+                <!-- RIGHT ARROW -->
+                <button class="next">&#10095;</button>
+            </div>
         </section>
     </main>
 
