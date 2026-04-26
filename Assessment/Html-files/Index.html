@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../Css-files/style.css"> <!-- Link to the external CSS file for styling -->
+    <script src="../Java-Script/carousel.js" defer></script> <!-- Link to the external JavaScript file for Carousel functionality -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osc International Dine In</title> <!-- Title of the webpage --> 
@@ -29,33 +30,33 @@
         <!-- Hero Section -->
         <section class="hero">
             <h1>Osc International Dine In</h1> <!-- Main heading of the webpage -->
-                <p>Welcome to a place of international cuisine. Feel free to explore our diverse menu</p>
+            <p>Welcome to a place of international cuisine. Feel free to explore our diverse menu</p>
         
-        <div class="buttons">
-            <button><a href="../Html-files/Menu.html">View menu</a></button>
-            <button><a href="../Html-files/Reservation.html">Make a reservation</a></button>
-            <button><a href="../Html-files/Aboutus.html">Learn more</a></button>
-        </div>
+            <div class="buttons">
+                <button><a href="../Html-files/Menu.html">View menu</a></button>
+                <button><a href="../Html-files/Reservation.html">Make a reservation</a></button>
+                <button><a href="../Html-files/Aboutus.html">Learn more</a></button>
+            </div>
         </section>
-    <!-- Carousel Section -->
-    <section class="carousel">
+        <!-- Carousel Section -->
+        <section class="carousel-section">
             <!-- Left arrow button -->
             <button class="prev">&#10094;</button>
-        <!-- Container that holds all images -->
-        <div class="carousel-track">
+            <!-- Container that holds all images -->
+            <div class="carousel">
                 <!-- Each image is a slide -->
-                <!-- "active" means this one is currently visible -->
+                <!-- this one is currently visible -->
                 <img src="../Images/Steak-Frites-052.jpg" class="slide active" alt="Steak and Fries">
-
                 <!-- Other slides start hidden -->
-                <img src="../Images" class="slide" alt="">
-                <img src="../Images/" class="slide" alt="">
-        </div>
-        <!-- Right arrow button -->
+                <img src="../Images/Chicken-Tikka-Masala.jpeg" class="slide" alt="Chicken Tikka Masala">
+                <img src="../Images/roasted-kumara-salad.jpg" class="slide" alt="Roasted Kūmara Salad">
+            </div>
+            <!-- Right arrow button -->
             <button class="next">&#10095;</button>
-    </section>
+        </section>
     </main>
-    <footer><div class="left">
+    <footer>
+        <div class="left">
             <p>Contact: info@restaurant.com | (123) 456-7890</p>
             <p>275 Ormiston Road, Manakau City Centre, Auckland 2016</p>
         </div>
