@@ -406,3 +406,39 @@ footer {
 .booking-form button:hover {
     background: #2563eb;
 }
+/* CONFIRMATION PAGE */
+
+.confirmation-page {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.confirmation-page h1 {
+    position: absolute center;
+}
+
+/* Box with details */
+.confirmation-box {
+    background: #e5e7eb;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;        /* IMPORTANT: makes it behave like a proper block */
+    width: fit-content;    /* shrink to content */
+    max-width: 400px;
+    margin: 20px auto;     /* THIS is what actually centers the box */
+    text-align: center;
+}
+
+/* Button */
+.confirm-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.confirm-btn:hover {
+    background: #2563eb;
+}
