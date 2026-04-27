@@ -476,6 +476,10 @@ footer {
     margin-top: 40px;
 }
 
+.team-section h2 {
+    margin-bottom: 20px;
+}
+
 .team-container {
     display: flex;
     justify-content: space-between;
