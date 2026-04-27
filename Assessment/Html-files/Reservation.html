@@ -22,26 +22,51 @@
                 <li><a href="../Html-files/Aboutus.html">About us</a></li>
             </ul>
         </div>
-        <h1>Make a Reservation</h1>
     </header>
-    <main>
-        <p>Please fill out the form below to make a reservation.</p>
-        <form action="../Html-files/Reservationconfirmation.html" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
-            <label for="time">Time:</label>
-            <input type="time" id="time" name="time" required>
-            <label for="guests">Number of Guests:</label>
-            <input type="number" id="guests" name="guests" min="1" max="26" required>
-            <button type="submit">Submit Reservation</button>
-        </form>
+    <main class="reservation-page">
+        <h1>Make a Reservation</h1>
+        <div class="reservation-layout">
+            <!-- left image -->
+             <div class="side-image">
+                <img src="../Images/restaurant-floorplanleftside.jpeg" alt="Restaurant Floor Plan Left Side">
+             </div>
+             <!-- Form -->
+            <p>Please fill out the form below to make a reservation.</p>
+            <form class="booking-form" action="../Html-files/Reservationconfirmation.html">
+                <!--name input-->
+                <label>Name</label>
+                <input type="text" placeholder="Your full name" required>
+                <!--date input-->
+                <label for="date">Date</label>
+                <input type="date" required>
+                <!--time input-->
+                <label for="time">Time</label>
+                <input type="time" required>
+                <!--guests input-->
+                <label for="guests">Number of Guests</label>
+                <input type="number" min="1" required>
+                <!--Special requests input-->
+                <label>Special Requests</label>
+                <textarea placeholder="Any special requests or dietary restrictions..."></textarea>
+                <!--submit button-->
+                <button type="submit">Submit Reservation</button>
+            </form>
+            <!-- right image -->
+            <div class="side-images">
+                <img src="../Images/restaurant-floorplanrightside.jpeg" alt="Restaurant Floor Plan Right Side">
+            </div>
+        </div>
+        <!--back link-->
+        <a href="../Html-files/Index.html" class="back-link">← Back to Home</a>
     </main>
     <footer>
-        <p>&copy; 2026 Osc International Restaurant. All rights reserved.</p> <!-- Footer with copyright information -->
+        <div class="left">
+            <p>Contact: info@restaurant.com | (123) 456-7890</p>
+            <p>275 Ormiston Road, Manakau City Centre, Auckland 2016</p>
+        </div>
+        <div class="right">
+            <p><a href="https://www.Facebook.com" target="_blank">Facebook</a> | <a href="https://www.instagram.com" target="_blank">Instagram</a> | <a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+        </div>
     </footer>
 </body>
 </html>
