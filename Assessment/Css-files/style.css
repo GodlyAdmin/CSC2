@@ -414,7 +414,7 @@ footer {
 }
 
 .confirmation-page h1 {
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
