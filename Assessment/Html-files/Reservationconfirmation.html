@@ -6,21 +6,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmation</title>
+    <!-- Google Translate widget from Google classroom-->
+     <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',  // Original language of your website
+                includedLanguages: 'es,fr,de',  // Languages available for translation
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE  // Choose layout
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
+    <!--  HEADER  -->
     <header>
         <!-- Logo -->
         <div class="logo">
             <a href="../Html-files/Index.html">
-                <img src="../Images/OSC-International-Dine-In-logo.png" alt="Logo">
+                <img src="../Images/OSC-International-Dine-In-logo.png" alt="Osc International Dine In Logo">
             </a>
         </div>
-        <div class="Navbar"><!-- Navigation bar with links to different pages -->
+        <!-- Navigation -->
+        <div class="Navbar">
             <ul>
                 <li><a href="../Html-files/Index.html">Home</a></li>
                 <li><a href="../Html-files/Menu.html">Menu</a></li>
                 <li><a href="../Html-files/Reservation.html">Reservation</a></li>
-                <li><a href="../Html-files/Aboutus.html">About us</a></li>
+                <li><a href="../Html-files/Aboutus.html">About Us</a></li>
+                <li><div id="google_translate_element"></div></li> <!-- Google Translate widget from google classroom-->
             </ul>
         </div>
     </header>
