@@ -444,3 +444,15 @@ footer {
 .confirm-btn:hover {
     background: #2563eb;
 }
+/* ABOUT PAGE */
+
+.about-page {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-page h1 {
+    margin-bottom: 30px;
+}
