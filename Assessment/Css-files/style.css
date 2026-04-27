@@ -414,7 +414,9 @@ footer {
 }
 
 .confirmation-page h1 {
-    position: absolute center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Box with details */
