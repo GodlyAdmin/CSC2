@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="../Java-Script/Reservation.js" defer></script><!-- Link to the external JavaScript file for saving reservation data -->
     <link rel="stylesheet" href="../Css-files/style.css"> <!-- Link to the external CSS file for styling -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,22 +32,22 @@
                 <img src="../Images/restaurant-floorplanleftside.jpeg" alt="Restaurant Floor Plan Left Side">
              </div>
              <!-- Form -->
-            <form class="booking-form" action="../Html-files/Reservationconfirmation.html">
+            <form class="booking-form" id="bookingForm" action="../Html-files/Reservationconfirmation.html" method="POST">
                 <!--name input-->
                 <label>Name</label>
-                <input type="text" placeholder="Your full name" required>
+                <input type="text" id="name" placeholder="Your full name" required>
                 <!--date input-->
                 <label for="date">Date</label>
-                <input type="date" required>
+                <input type="date" id="date" required>
                 <!--time input-->
                 <label for="time">Time</label>
-                <input type="time" required>
+                <input type="time" id="time" required>
                 <!--guests input-->
                 <label for="guests">Number of Guests</label>
-                <input type="number" min="1" required>
+                <input type="number" id="guests" min="1" required>
                 <!--Special requests input-->
-                <label>Special Requests</label>
-                <textarea placeholder="Any special requests or dietary restrictions..."></textarea>
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" placeholder="Any special requests or dietary restrictions..."></textarea>
                 <!--submit button-->
                 <button type="submit">Submit Reservation</button>
             </form>

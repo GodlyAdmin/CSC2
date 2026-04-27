@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="../Java-Script/Confirmation.js" defer></script> <!-- Link to the external JavaScript file for Confirmation functionality -->
     <link rel="stylesheet" href="../Css-files/style.css"> <!-- Link to the external CSS file for styling -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,12 +29,13 @@
         <h1>Reservation Confirmed</h1>
         <p>Thank you for your reservation. Your details are below:</p>
         <div class="confirmation-box">
-            <p><strong>Name:</strong> [Customer's Name]</p>
-            <p><strong>Date:</strong> [Reservation Date]</p>
-            <p><strong>Time:</strong> [Reservation Time]</p>
-            <p><strong>Number of Guests:</strong> [Number of Guests]</p>
-            <p><strong>Table Number:</strong> [Table Number]</p>
-            <p><strong>Special Requests:</strong> [Special Requests]</p>
+            <p><strong>Confirmation Number:</strong> <span id="confNum"></span></p>
+            <p><strong>Name:</strong> <span id="confName"></span></p>
+            <p><strong>Date:</strong> <span id="confDate"></span></p>
+            <p><strong>Time:</strong> <span id="confTime"></span></p>
+            <p><strong>Number of Guests:</strong> <span id="confGuests"></span></p>
+            <p><strong>Table Number:</strong> <span id="confTable"></span></p>
+            <p><strong>Special Requests:</strong> <span id="confRequests"></span></p>
         </div>
         <a href="../Html-files/Index.html" class="back-link">← Back to Home</a>
     </main>
