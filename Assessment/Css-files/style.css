@@ -482,3 +482,17 @@ footer {
     gap: 20px;
     flex-wrap: wrap;
 }
+
+/* Each members description */
+.team-members {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+/* Role text */
+.role {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
